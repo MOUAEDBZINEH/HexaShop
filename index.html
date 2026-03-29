@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معلم بوك</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Urbanist:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="images/logo-white.png" class="logo-img" alt="معلم بوك" />
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن التطبيق</a></li>
+            <li><a href="#features">مميزات التطبيق</a></li>
+            <li><a href="#download">ابدأ الآن</a></li>
+          </ul>
+          <button class="btn-download">
+            <svg width="30" height="30" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M12.5 3V16M12.5 16L7.5 11M12.5 16L17.5 11"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path d="M3 19V21H22V19" stroke="white" stroke-width="2" />
+            </svg>
+            <span>حمل الآن</span>
+          </button>
+          <button class="burger" id="burgerBtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <svg viewBox="0 0 1440 700" preserveAspectRatio="none">
+          <defs>
+            <pattern
+              id="heroImage"
+              patternUnits="userSpaceOnUse"
+              width="1440"
+              height="800"
+            >
+              <image
+                href="images/Illustration.png"
+                width="1440"
+                height="800"
+                transform="scale(-1,1) translate(-1440,0)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+            </pattern>
+
+            <linearGradient
+              id="heroGradient"
+              x1="0%"
+              y1="0%"
+              x2="20%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.8" />
+              <stop offset="20%" stop-color="#9B5CF6" stop-opacity="0.8" />
+              <stop offset="100%" stop-color="#F84669" stop-opacity="0.8" />
+            </linearGradient>
+          </defs>
+
+          <path
+            d="M0,500 
+           C150,400 350,580 550,550 
+           S850,520 1050,460
+           S1350,450 1440,500
+           L1440,0 
+           L0,0 
+           Z"
+            fill="url(#heroImage)"
+          />
+
+          <path
+            d="M0,500 
+           C150,400 350,580 550,550 
+           S850,520 1050,460
+           S1350,450 1440,500
+           L1440,0 
+           L0,0 
+           Z"
+            fill="url(#heroGradient)"
+          />
+        </svg>
+      </div>
+
+      <div class="container hero-wrapper">
+        <!-- IMAGE -->
+        <div class="hero-image">
+          <img src="images/hero-phone1.png" alt="App" />
+        </div>
+
+        <!-- TEXT -->
+        <div class="hero-content">
+          <h1>بوابتك الأولى لعالم التدريب والتطوير</h1>
+          <p>
+            تطبيق يربط الطلاب بالمدربين والمراكز التعليمية لإدارة التدريب بسهولة
+          </p>
+        </div>
+      </div>
+
+      <!-- الجزء الأبيض + الفيتشر -->
+      <div class="hero-bottom">
+        <div class="container">
+          <div class="feature-cards">
+            <!-- مدربون -->
+            <div class="feature-item">
+              <div class="icon-box">
+                <img
+                  src="images/icons/trainers.png"
+                  width="60"
+                  height="60"
+                  alt="مدربون"
+                />
+              </div>
+              <div class="feature-text">
+                <h3>مدربون</h3>
+                <p>إدارة دورات · جلسات · أرباح</p>
+              </div>
+            </div>
+
+            <!-- طلاب -->
+            <div class="feature-item">
+              <div class="icon-box">
+                <img
+                  src="images/icons/students.png"
+                  width="60"
+                  height="60"
+                  alt="طلاب"
+                />
+              </div>
+              <div class="feature-text">
+                <h3>طلاب</h3>
+                <p>اكتشاف · حجز · متابعة</p>
+              </div>
+            </div>
+
+            <!-- مراكز تدريب -->
+            <div class="feature-item">
+              <div class="icon-box">
+                <img
+                  src="images/icons/centers.png"
+                  width="60"
+                  height="60"
+                  alt="مراكز تدريب"
+                />
+              </div>
+              <div class="feature-text">
+                <h3>مراكز تدريب</h3>
+                <p>تنظيم · مدربين · تقارير</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container about-wrapper">
+        <!-- الصورة -->
+        <div class="about-image">
+          <img src="images/student.png" alt="" />
+        </div>
+
+        <!-- اللوغو -->
+        <div class="about-logo">
+          <img src="images/LogoStudent.png" alt="" />
+        </div>
+
+        <!-- مربع النص -->
+        <div class="about-box">
+          <h2>لماذا هذا التطبيق؟</h2>
+          <p>لأنه يجمع التدريب الحضوري وعن بُعد في منصة واحدة سهلة الاستخدام</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">مميزات التطبيق</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/icons/rating.svg" alt="نظام تقييم" />
+            </div>
+            <h3>نظام تقييم</h3>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-red">
+              <img src="images/icons/calendar.svg" alt="تقويم الجلسات" />
+            </div>
+            <h3>تقويم الجلسات</h3>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/icons/feature.svg" alt="إدارة الدورات" />
+            </div>
+            <h3>إدارة الدورات</h3>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-red">
+              <img src="images/icons/courses.svg" alt="واجهة سهلة" />
+            </div>
+            <h3>واجهة سهلة</h3>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="images/icons/money.svg" alt="إدارة مالية" />
+            </div>
+            <h3>إدارة مالية</h3>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-red">
+              <img src="images/icons/support.svg" alt="تواصل مباشر" />
+            </div>
+            <h3>تواصل مباشر</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Showcase -->
+    <section class="showcase">
+      <div class="container">
+        <div class="phones-wrapper">
+          <img src="images/phones.png" alt="Phones" />
+        </div>
+      </div>
+
+      <!-- الشريط -->
+      <div class="showcase-bar">
+        <p>
+          <span>•</span>
+          <span> ابحث، احجز، وتعلم </span>
+          <span>•</span>
+          <span>أدر تدريبك باحترافية</span>
+          <span>•</span>
+          <span>وسع نطاق وصولك</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+
+    <section class="download-section" id="download">
+      <div class="container">
+        <div class="download-layout">
+          <!-- الكرت -->
+          <div class="download-card">
+            <div class="download-card-content">
+              <h2>إبدأ الآن</h2>
+              <p>
+                حمّل التطبيق وابدأ تجربة<br />
+                تدريب مختلفة
+              </p>
+
+              <div class="download-buttons">
+                <a href="#" class="">
+                  <img
+                    src="images/google-play-button.svg"
+                    height="94"
+                    width="291"
+                    alt="Google Play Badge"
+                  />
+                </a>
+                <a href="#" class="">
+                  <img
+                    src="images/download-on-the-app-store.svg"
+                    height="94"
+                    width="291"
+                    alt="Apple App Store Badge"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- جهة الجوالات -->
+          <div class="download-phones-col">
+            <div class="download-phones">
+              <img src="images/hero-phone.png" alt="تطبيق معلم بوك" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-card">
+        <!-- العمود 4: الشعار والوصف -->
+        <div class="footer-col footer-about">
+          <img
+            src="images/logo-white.png"
+            alt="Modareb Book"
+            class="footer-logo"
+          />
+
+          <p>
+            منصة ذكية لإدارة التدريب وربط الطلاب بالمدربين والمراكز التعليمية
+          </p>
+        </div>
+        <div class="footer-col footer-links">
+          <h4>روابط سريعة</h4>
+          <a href="#home">الرئيسية</a>
+          <a href="#about">عن التطبيق</a>
+          <a href="Privacy policy.html">سياسة الخصوصية</a>
+          <a href="Terms and conditions.html">الشروط والأحكام</a>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>تواصل معنا</h4>
+
+          <p class="contact-item">
+            <i class="fa-solid fa-envelope"></i> info@modarebbook.com
+          </p>
+
+          <p class="contact-item">
+            <i class="fa-solid fa-phone"></i> +966 55 555 6666
+          </p>
+
+          <h4 class="follow-title">تابعنا</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <!-- العمود 1: أزرار المتاجر -->
+        <div class="footer-col footer-download">
+          <a href="#" class="store-btn google">
+            <div class="store-text">
+              <p>Get it on</p>
+              <strong>Play Store</strong>
+            </div>
+            <img src="images/icons/google-play.svg" alt="google play" />
+          </a>
+          <a href="#" class="store-btn google">
+            <div class="store-text">
+              <p>Download on</p>
+              <strong>App Store</strong>
+            </div>
+            <img src="images/icons/apple-store.svg" alt="apple store" />
+          </a>
+        </div>
+        <div class="copyright">© 2026 مدرب بوك – جميع الحقوق محفوظة</div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      // Mobile Menu Toggle
+      const burgerBtn = document.getElementById("burgerBtn");
+      const navMenu = document.getElementById("navMenu");
+
+      burgerBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+
+        // Toggle icon between bars and X
+        const icon = burgerBtn.querySelector("i");
+        if (navMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-xmark");
+        } else {
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // Close menu when clicking on a link
+      const navLinks = document.querySelectorAll(".nav-menu a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          const icon = burgerBtn.querySelector("i");
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !burgerBtn.contains(e.target)) {
+          navMenu.classList.remove("active");
+          const icon = burgerBtn.querySelector("i");
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>
